@@ -10,7 +10,8 @@ Kode dalam Python dibuat untuk mem-posting kata-kata dari [KBBI Daring][kbbi] pa
 2. Klonakan repositori ini atau unduh [`app.py`][app-py] dan [`kata.txt`][kata-txt].
 3. Letakkan `app.py` dan `kata-txt` dalam direktori yang Anda inginkan.
 4. Buka dan sunting berkas "file" `app.py`.
-5. Masukkan `consumer key`, `consumer secret`, `access token`, dan `access token secret` Anda pada baris 10 hingga 13.
+5. Masukkan `consumer key`, `consumer secret`, `access token`, dan `access token secret` Anda pada baris 11 hingga 14.
+6. Masukkan juga `pos-el` dan `kata sandi` KBBI Anda pada baris 15 dan 16.
 
 ## Penggunaan
 
