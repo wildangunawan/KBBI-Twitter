@@ -11,6 +11,8 @@ consumer_key = "CONSUMER KEY"
 consumer_secret = "CONSUMER SECRET"
 access_token = "ACCESS TOKEN"
 access_token_secret = "ACCESS TOKEN SECRET"
+posel_kbbi = "POS-EL UNTUK KBBI"
+password_kbbi = "PASSWORD UNTUK KBBI"
 
 # koneksi ke Twitter
 auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret)
@@ -22,7 +24,7 @@ api = tweepy.API(auth)
 # jika tidak membuat akun maka Anda
 # hanya dapat mengakses KBBI sebanyak
 # 95 kali per hari
-auth = AutentikasiKBBI("posel@saya.tld", "password_saya")
+auth = AutentikasiKBBI(posel_kbbi, password_kbbi)
 
 # fungsi untuk ambil baris random
 def jumlahBaris():
