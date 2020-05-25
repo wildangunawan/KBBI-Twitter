@@ -2,6 +2,7 @@
 # yang diperlukan
 from kbbi import KBBI
 from kbbi import TidakDitemukan
+from kbbi import AutentikasiKBBI
 from random import randint
 import tweepy
 import time
@@ -23,7 +24,7 @@ api = tweepy.API(auth)
 # akses dengan jumlah unlimited
 # jika tidak membuat akun maka Anda
 # hanya dapat mengakses KBBI sebanyak
-# 95 kali per hari
+# 100 kali per hari
 auth = AutentikasiKBBI(posel_kbbi, password_kbbi)
 
 # fungsi untuk ambil baris random
