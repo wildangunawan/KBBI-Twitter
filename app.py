@@ -17,6 +17,13 @@ auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
+# otentikasi ke KBBI untuk
+# akses dengan jumlah unlimited
+# jika tidak membuat akun maka Anda
+# hanya dapat mengakses KBBI sebanyak
+# 95 kali per hari
+auth = AutentikasiKBBI("posel@saya.tld", "password_saya")
+
 # fungsi untuk ambil baris random
 def jumlahBaris():
 	# variabel untuk menyimpan jumlah kata
@@ -57,7 +64,7 @@ def ambilDariKBBI(kata):
 	# tsb ada dalam KBBI atau tidak
 	try:
 		# coba akses ke KBBI daring
-		kata = KBBI(kata)
+		kata = KBBI(kata, auth)
 
 		# jika tidak ada kesalahan
 		# maka tersedia
