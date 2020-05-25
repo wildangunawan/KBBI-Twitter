@@ -30,7 +30,7 @@ auth = AutentikasiKBBI(posel_kbbi, password_kbbi)
 # fungsi untuk ambil baris random
 def jumlahBaris():
 	# variabel untuk menyimpan jumlah kata
-	total_jumlah_baris = -1
+	total_jumlah_baris = 0
 
 	# cek berapa kata yang tersedia
 	with open("kata.txt", "r") as f:
